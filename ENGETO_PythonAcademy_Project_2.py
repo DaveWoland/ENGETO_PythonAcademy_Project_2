@@ -88,8 +88,7 @@ def bull_cow(player: list, game_no: list) -> str:
     player_no = list(player)
     spravna_pozice = 0
     spravne_cislo = 0
-    byk = ['bulls', 'bull']
-    krava = ['cows', 'cow']
+    byk, krava = ['bulls', 'bull'], ['cows', 'cow']
 
     for i, x in enumerate(player_no):
         for j, y in enumerate(game_no):
