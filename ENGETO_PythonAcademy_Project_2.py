@@ -41,10 +41,10 @@ def main():
         oddelovac(text0)
 
 
-    end = time()
+    end = time() - start
 
     #Čas hry převedený do formátu mm : ss
-    game_time = game_time_format(end - start)
+    game_time = game_time_format(end)
     print(f"You had {guess_count} {['guess', 'guesses'][guess_count != 1]}.")
     print(f"Your game took: {game_time}")
 
