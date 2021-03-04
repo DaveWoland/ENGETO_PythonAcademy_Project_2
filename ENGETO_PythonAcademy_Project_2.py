@@ -98,3 +98,7 @@ main()
 #def casu hry
 
 #def poctu odhadu
+
+#opravit popisky parametru
+
+#Dopsat info o proměnných k definovaným funkcím
