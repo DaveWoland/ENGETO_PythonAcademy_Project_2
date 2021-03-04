@@ -8,11 +8,11 @@ def main():
     text0 = "I've generated a random 4 digits number for you."
     text1 = "Let's play a bulls and cows game."
 
-    print("Hi there!")
-    oddelovac(text0)
-    print(text0)
-    print(text1)
-    oddelovac(text0)
+    print(f"Hi there!\n"
+          f"{'-'*len(text0)}\n"
+          f"{text0}\n"
+          f"{text1}\n"
+          f"{'-'*len(text0)}")
 
     guess_count = 0
 
@@ -26,6 +26,7 @@ def main():
         # Vstup a kontrola vstupu uzivatele
         player_input_string = vstup_kontrola()
 
+
         #Prevod vstupu uzivatele na list cisel
         player_input_lst = vstup_prevod(player_input_string)
 
@@ -36,6 +37,9 @@ def main():
         else:
             #Kontrola shody čísel a umístění
             bull_cow(player_input_lst, lst_4)
+
+        oddelovac(text0)
+
 
     end = time()
 
