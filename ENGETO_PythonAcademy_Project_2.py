@@ -101,7 +101,7 @@ def bull_cow(player: list, game_no: list) -> str:
 
 #def fce pro převod času hry do formátu mm : ss
 def game_time_format(time) -> str:
-    output = f"{time // 60} min : {(time % 60):.0f} sec"
+    output = f"{int(time // 60)} min : {(time % 60):.0f} sec"
     return output
 
 
