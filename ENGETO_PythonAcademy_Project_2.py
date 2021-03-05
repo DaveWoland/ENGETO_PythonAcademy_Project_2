@@ -99,9 +99,9 @@ def bull_cow(player: list, game_no: list) -> str:
     vystup = [f"{spravna_pozice} {byk[spravna_pozice == 1]}, {spravne_cislo} {krava[spravne_cislo == 1]}"]
     print(vystup)
 
-
+#def fce pro převod času hry do formátu mm : ss
 def game_time_format(time) -> str:
-    output = f"{round(time // 60)} min : {(time % 60):.0f} sec"
+    output = f"{time // 60} min : {(time % 60):.0f} sec"
     return output
 
 
