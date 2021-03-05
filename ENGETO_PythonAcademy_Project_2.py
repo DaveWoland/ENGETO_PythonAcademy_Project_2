@@ -78,19 +78,16 @@ def vstup_kontrola() -> str:
 
 #def fce prevedeni uzivatelova vstupu (stringu) na list cisel
 def vstup_prevod(string: str) -> list:
-    lst_vstup = []
-    for char in string:
-        lst_vstup.append(int(char))
+    lst_vstup = [int(char) for char in string]
     return lst_vstup
 
 #def fce kontrola shody cisel a umisteni, kontrola poctu spravnych cisel
 def bull_cow(player: list, game_no: list) -> str:
-    player_no = list(player)
     spravna_pozice = 0
     spravne_cislo = 0
     byk, krava = ['bulls', 'bull'], ['cows', 'cow']
 
-    for i, x in enumerate(player_no):
+    for i, x in enumerate(player):
         for j, y in enumerate(game_no):
             if x == y and i == j:
                 spravna_pozice += 1
